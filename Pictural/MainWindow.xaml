@@ -1,0 +1,16 @@
+﻿<Window x:Class="Pictural.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pictural" Height="220" Width="460">
+    <Grid>
+        <Button Content="Organize" Height="23" HorizontalAlignment="Left" Margin="351,146,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="buttonOrganize_Click" />
+        <Button Content="Select Folder" Height="23" HorizontalAlignment="Left" Margin="12,47,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="buttonFolder_Click" />
+		<Button Content="Select Folder" Height="23" HorizontalAlignment="Left" Margin="12,109,0,0" Name="button3" VerticalAlignment="Top" Width="75" Click="buttonOutput_Click" />
+		<TextBox Height="23" HorizontalAlignment="Left" Margin="109,47,0,0" Name="textBoxPathSource" VerticalAlignment="Top" Width="317" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="109,109,0,0" Name="textBoxPathTarget" VerticalAlignment="Top" Width="317" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="268,146,0,0" Name="textBoxTimeValue" VerticalAlignment="Top" Width="62" />
+        <Label Content="Picture Directory" Height="28" HorizontalAlignment="Left" Margin="109,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Output Directory" Height="28" HorizontalAlignment="Left" Margin="109,76,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Time Offset" Height="28" HorizontalAlignment="Left" Margin="191,144,0,0" Name="label3" VerticalAlignment="Top" />
+    </Grid>
+</Window>
