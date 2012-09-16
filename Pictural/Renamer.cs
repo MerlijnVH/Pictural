@@ -124,10 +124,10 @@ namespace Pictural
 
 					// Set the picture name to the date and time.
 
-					pictureName = dateTaken.ToString("yyyy-MM-dd HH-mm-ss tt");
+					pictureName = dateTaken.ToString("yyyy-MM-dd HH-mm-ss");
 				}
 
-				subFolderPath = String.Format("{0}/{1}", outputPath, subFolderName);
+				subFolderPath = String.Format(@"{0}\{1}", outputPath, subFolderName);
 
 				if (!Directory.Exists(subFolderPath))
 				{
@@ -135,7 +135,7 @@ namespace Pictural
 				}
 
 				string photoFilename = String.Format("{0}{1}", pictureName, ".jpg");
-				string photoRelocation = String.Format("{0}/{1}", subFolderPath, photoFilename);
+				string photoRelocation = String.Format(@"{0}\{1}", subFolderPath, photoFilename);
 
 				fileList.Add(new Picture(filePath, photoRelocation));
 
